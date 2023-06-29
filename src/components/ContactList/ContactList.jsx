@@ -41,7 +41,7 @@ export const ContactList = () => {
               <li key={contact.id} className={css.contactsItem} id={contact.id}>
                 <div className={css.contactItemWrap}>
                 <p className={css.contactName}>{contact.name}:
-                  <span className={css.contactNumber}>{contact.phone}</span>
+                  <span className={css.contactNumber}>{contact.number}</span>
                   </p>
                     <button type='button' className={css.addContactBtn} onClick={() => dispatch(deleteContact(contact.id))}>Delete</button>
                 </div>

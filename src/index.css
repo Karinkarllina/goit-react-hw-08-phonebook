@@ -7,7 +7,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(241, 208, 223);
+  /* background-color: rgb(241, 208, 223); */
+  background-image: url("../src/images/pexels-photo-7130498.jpg");
+  background-size: cover;
 }
 
 code {

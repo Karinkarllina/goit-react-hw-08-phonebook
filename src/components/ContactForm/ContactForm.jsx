@@ -14,7 +14,7 @@ export function ContactForm() {
 
         const newContact = {
             name: formValue.elements.name.value,
-            phone: formValue.elements.phone.value,  
+            number: formValue.elements.phone.value,  
         }
 
         const filterName = contacts.filter(contact => contact.name.toLowerCase() === newContact.name.toLowerCase()).length;

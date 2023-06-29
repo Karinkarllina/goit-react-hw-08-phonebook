@@ -1,7 +1,7 @@
 
 import { useDispatch } from 'react-redux';
 import { useAuth } from '../hooks/useAuth';
-import { useEffect, lazy, Suspense } from 'react';
+import { useEffect, lazy } from 'react';
 import { refreshUser } from '../redux/userOperations';
 import { Route, Routes } from 'react-router-dom';
 import { RestrictedRoute } from './RestrictedRoute';
@@ -35,12 +35,14 @@ export function App() {
           element={
             <RestrictedRoute redirectTo="/contacts" component={<RegisterPage />} />
           } />
+        
           <Route
           path="/login"
           element={
             <RestrictedRoute redirectTo="/contacts" component={<LoginPage />} />
           }
         />
+
         <Route
           path="/contacts"
           element={
