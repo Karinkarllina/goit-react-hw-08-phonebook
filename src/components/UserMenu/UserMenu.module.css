@@ -15,11 +15,18 @@
 }
 
 .userWelcomeName {
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 700;
     font-family: 'Oxygen';
+    color: rgb(70, 25, 129);
     text-shadow: 2px 2px 3px rgb(220, 62, 89);
     margin-right: 5px;
+}
+
+.userLogOut:hover,
+.userLogOut:focus {
+    color: rgb(218, 19, 42);
+    text-shadow: 0 0 2px #FF0000;
 }
 
 .userLogOut {
@@ -34,4 +41,5 @@
     font-family: 'Oxygen';
     text-shadow: 2px 2px 3px pink;
     margin-top: 15px;
+    cursor: pointer;
 }

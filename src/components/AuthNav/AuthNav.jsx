@@ -4,7 +4,7 @@ import css from './AuthNav.module.css'
 
 export const AuthNav = () => {
   return (
-    <div>
+    <div className={css.navWrap}>
       <NavLink  to="/register" className={css.navReg}>
         Register
       </NavLink>

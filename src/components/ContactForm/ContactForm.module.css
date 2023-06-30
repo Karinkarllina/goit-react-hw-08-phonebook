@@ -40,4 +40,11 @@
     font-weight: 500;
     font-family: 'Oxygen';
     text-shadow: 2px 2px 3px pink;
+    cursor: pointer;
+}
+
+.formAddBtn:hover,
+.formAddBtn:focus {
+    color: rgb(218, 19, 42);
+    text-shadow: 0 0 2px #FF0000;
 }

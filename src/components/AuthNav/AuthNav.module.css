@@ -5,6 +5,7 @@
     text-shadow: 1px 1px 1px rgb(114, 71, 255);
     text-decoration: none;
     margin-right: 10px;
+
 }
 
 .navLog {
@@ -14,5 +15,25 @@
     text-shadow: 1px 1px 1px rgb(114, 71, 255);
     text-decoration: none;
     margin-left: 10px;
+
+
+}
+.navReg:hover,
+.navReg:focus {
+    color: rgb(218, 19, 42);
+    text-shadow: 0 0 2px #FF0000;
+
+}
+
+.navLog:hover,
+.navLog:focus {
+    color: rgb(218, 19, 42);
+    text-shadow: 0 0 2px #FF0000;
+
+}
+
+.navWrap {
+    padding-top: 15px;
+    padding-bottom: 15px;
 
 }

@@ -38,6 +38,7 @@
     font-family: 'Oxygen';
     text-shadow: 2px 2px 3px pink;
     margin-left: 45px;
+    cursor: pointer;
 }
 
 
@@ -55,4 +56,10 @@
     text-shadow: 2px 2px 3px pink;
     color: 2px 2px 3px rgb(156, 56, 73);
     margin-left: 10px;
+}
+
+.addContactBtn:hover,
+.addContactBtn:focus {
+    color: rgb(218, 19, 42);
+    text-shadow: 0 0 2px #FF0000;
 }

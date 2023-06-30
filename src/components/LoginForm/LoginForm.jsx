@@ -30,7 +30,7 @@ export const LoginForm = () => {
         Password
         <input type="password" name="password" className={css.loginInputWrap}/>
       </label>
-      <button type="submit" className={css.buttomLogWrap}>Log In</button>
+      <button type="submit" className={css.buttoтLogWrap}>Log In</button>
       </form>
     </div>
   );
