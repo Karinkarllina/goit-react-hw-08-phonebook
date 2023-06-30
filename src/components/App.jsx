@@ -7,12 +7,13 @@ import { Route, Routes } from 'react-router-dom';
 import { RestrictedRoute } from './RestrictedRoute';
 import { Layout } from './Layout';
 import { PrivateRoute } from './PrivateRoute';
-
+import css from './App.module.css'
 
 const HomePage = lazy(() => import('../pages/Home'));
 const RegisterPage = lazy(() => import('../pages/Register'));
 const LoginPage = lazy(() => import('../pages/Login'));
 const ContactsPage = lazy(() => import('../pages/Contacts'));
+
 
 export function App() {
 
@@ -25,7 +26,7 @@ export function App() {
 
 
 
-  return isRefreshing ? (<b>Refreshing user...</b>) : (
+  return isRefreshing ? (<b className={css.refrUserText}>Refreshing user...</b>) : (
       <Routes>
         <Route path="/" element={<Layout />}>
         <Route index element={<HomePage />} />

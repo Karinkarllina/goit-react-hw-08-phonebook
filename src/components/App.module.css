@@ -23,4 +23,21 @@
 }
 
 
+.refrUserText {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Oxygen';
+    text-shadow: 2px 2px 3px pink;
+    color: 2px 2px 3px rgb(156, 56, 73);
+    margin-left: 10px;
+}
 
+
+.requestText {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Oxygen';
+    text-shadow: 2px 2px 3px pink;
+    color: 2px 2px 3px rgb(156, 56, 73);
+    margin-left: 10px;
+}

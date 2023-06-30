@@ -32,8 +32,8 @@ export const ContactList = () => {
 
   return (
     <>
-      {isLoading && <p>Loading contacts...</p>}
-      {error && <p>{error}</p>}
+      {isLoading && <p className={css.loadingContacts}>Loading contacts...</p>}
+      {error && <p className={css.loadingContacts}>{error}</p>}
 
       <ul className={css.contactList}>
         {filterContacts.map(contact => {

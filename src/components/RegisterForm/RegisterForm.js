@@ -23,7 +23,7 @@ export const RegisterForm = () => {
   return (
     <div className={css.regWrap}>
       <h1 className={css.regTitle}>Welcome! </h1>
-      <p className={css.regText}>In order to start using the phone book, please register.</p>
+      <p className={css.regText}>In order to start using the phonebook, please register.</p>
     <form onSubmit={handleSubmit} autoComplete="off" className={css.formRegWrap}>
       <label className={css.labelRegWrap}>
         Name

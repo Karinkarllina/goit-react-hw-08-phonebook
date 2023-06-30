@@ -20,8 +20,8 @@ export default function Contacts() {
         <ContactForm />
             <Filter />
         <h2 className={css.sectionTitle}>Contacts</h2>
-        <div>{error && {error} }</div>
-        <div>{isLoading && 'Request in progress...'}</div>
+        <div className={css.requestText}>{error && {error} }</div>
+        <div className={css.requestText}>{isLoading && 'Request in progress...'}</div>
           <ContactList/>  
 
     </div>

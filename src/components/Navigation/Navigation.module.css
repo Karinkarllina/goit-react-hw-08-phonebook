@@ -1,7 +1,17 @@
-.navLink {
+.navLinkHome {
     font-size: 20px;
     font-weight: 700;
     font-family: 'Oxygen';
     text-shadow: 1px 1px 1px rgb(114, 71, 255);
     text-decoration: none;
+    margin-right: 10px;
+
 }
+
+.navLinkCont {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Oxygen';
+    text-shadow: 1px 1px 1px rgb(114, 71, 255);
+    text-decoration: none;
+}    
