@@ -11,7 +11,7 @@ export const ContactList = () => {
   const filterValue = useSelector(state => state.filter);
 
   const isLoading = useSelector(state => state.contacts.isLoading);
-   const error = useSelector(state => state.contacts.error);
+  const error = useSelector(state => state.contacts.error);
 
   // const store = useSelector(store => store)
 

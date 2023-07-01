@@ -1,5 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { register } from '../../redux/userOperations';
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import css from './RegisterForm.module.css';
 
 
@@ -9,11 +10,19 @@ export const RegisterForm = () => {
   const handleSubmit = event => {
     event.preventDefault();
     const form = event.currentTarget;
+    const name = form.elements.name.value;
+    const email = form.elements.email.value;
+    const password = form.elements.password.value;
+    
+    if (name === "" || email === "" || password === "") {
+      return Notify.failure('Oops! Nothing found. Please, fill your information in all fields and try again.');
+    }
+
     dispatch(
       register({
-        name: form.elements.name.value,
-        email: form.elements.email.value,
-        password: form.elements.password.value,
+        name: name,
+        email: email,
+        password: password,
       }) 
     );
     // console.log(form.elements.name.value)

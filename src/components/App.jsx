@@ -7,6 +7,7 @@ import { Route, Routes } from 'react-router-dom';
 import { RestrictedRoute } from './RestrictedRoute';
 import { Layout } from './Layout';
 import { PrivateRoute } from './PrivateRoute';
+import { Navigate } from 'react-router-dom';
 import css from './App.module.css'
 
 const HomePage = lazy(() => import('../pages/Home'));
@@ -50,6 +51,7 @@ export function App() {
             <PrivateRoute redirectTo="/login" component={<ContactsPage />} />
           }
         />
+        <Route path="*" element={<Navigate to="/" />} />
           </Route>
         </Routes>
   );
