@@ -1,5 +1,6 @@
 import { useSelector, useDispatch } from "react-redux";
 import { addContact } from "redux/contactsOperations"; 
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import css from './ContactForm.module.css';
 
 export function ContactForm() { 
@@ -21,9 +22,8 @@ export function ContactForm() {
         // console.log(filterName)
 
         if (filterName) {
-            return alert(`${newContact.name} is already in contacts`)
+            return Notify.failure(`${newContact.name} is already in contacts`); 
         }
-        
         dispatch(
             addContact(
                 newContact
